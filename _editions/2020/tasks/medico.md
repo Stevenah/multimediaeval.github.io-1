@@ -13,8 +13,6 @@ blurb: The fight against colorectal cancer requires better diagnosis tools. Comp
 <!-- # please respect the structure below-->
 
 #### Challenge Description
-Colonoscopy is a standard medical procedure for the examination of colon cancer. Colorectal cancer (CRC) is the third most prevailing strain in terms of cancer incidence and second in terms of mortality globally. Regular screening through colonoscopy is a prerequisite for early cancer detection and prevention of colorectal cancer. Regardless of the achievement of colonoscopy in reducing the cancer burden, the estimated adenoma miss rate is around 6-27%. An automated computer-aided diagnosis (CAD) system could be one of the potential solutions for the overlooked polyps. Such detection or surveillance system can help low-cost design solutions and save doctors time, which they could use to look for severe cases. 
-
 Common datasets and benchmarking of the methods are essential for developing automated semantic segmentation approaches for clinical translation. The "Medico automatic polyp segmentation task" aims to develop a computer-aided diagnosis system for an automatic polyp segmentation that can detect all polyp (for example, irregular polyp, smaller or flat polyps) with high accuracy. The main goal of the challenge is to benchmark semantic segmentation algorithms on the publicly available dataset, with a specific emphasis on robustness and generalization of the methods to solve the limitation related to data availability and method comparison. 
 
 
@@ -26,6 +24,7 @@ The participants are invited to submit the results on the following tasks:
 2) Algorithm efficiency task (required)  - The algorithm efficiency task is similar to task one but puts a stronger emphasis on the algorithm's speed in terms of frames-per-second. To ensure a fair evaluation, this task requires participants to submit a Docker image so that all algorithms are evaluated on the same hardware. 
 
 #### Motivation and Background
+Colonoscopy is a standard medical procedure for the examination of colon cancer. Colorectal cancer (CRC) is the third most prevailing strain in terms of cancer incidence and second in terms of mortality globally. Regular screening through colonoscopy is a prerequisite for early cancer detection and prevention of colorectal cancer. Regardless of the achievement of colonoscopy in reducing the cancer burden, the estimated adenoma miss rate is around 6-27%. An automated computer-aided diagnosis (CAD) system could be one of the potential solutions for the overlooked polyps. Such detection or surveillance system can help low-cost design solutions and save doctors time, which they could use to look for severe cases.
 
 #### Target Group
 The task is of interest to the researchers working with medical image segmentation, deep learning (semantic segmentation), and computer vision. We especially encourage young researchers to contribute to the field of endoscopy by developing an automated computer-aided diagnosis system that could be potentially used in clinical settings.  
