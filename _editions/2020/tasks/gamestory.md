@@ -13,7 +13,9 @@ blurb: The Emotional Mario task explores the use of human emotion to improve the
 <!-- # please respect the structure below-->
 
 #### Task Description
-Emotional Mario defines two subtasks. In the first subtask, we want participants to predict failure (Mario’s death) based on the sensor data. Only forward prediction is allowed, so participants cannot use the emotional reaction after the event. For the second subtask, participants of the Emotional Mario task are expected to create an AI that controls Mario throughout the game. While minimizing time and maximizing score and progress has been topic to the Mario AI competition [3], in this task, we ask participants to submit AIs for two levels of skill: (i) skilled player and (ii) novice player. A jury will then be presented with videos from human players and AIs in a random sequence and has to judge whether the playthrough in the video originates from a skilled or novice player and if they think a human or an AI controls the game, just like in a Turing test. 
+Emotional Mario defines two subtasks.
+<!-- In the first subtask, we want participants to predict failure (Mario’s death) based on the sensor data. Only forward prediction is allowed, so participants cannot use the emotional reaction after the event. -->
+In the first subtask, we want participants to produce an agent that is able to play Super Mario Bros as well as possible. The goal of this task is for the agent (Mario) to get as far as possible in the game (number of levels beat) with the least amount of lives lost. For the second subtask, participants of the Emotional Mario task are expected to create an AI that controls Mario throughout the game. While minimizing time and maximizing score and progress has been topic to the Mario AI competition [3], in this task, we ask participants to submit AIs for two levels of skill: (i) skilled player and (ii) novice player. A jury will then be presented with videos from human players and AIs in a random sequence and has to judge whether the playthrough in the video originates from a skilled or novice player and if they think a human or an AI controls the game, just like in a Turing test. 
 
 #### Motivation and Background
 With the rise of deep learning, many large leaps in research have been achieved in recent years, such as human-level image recognition or text classification. In tasks like image classification, autonomous driving, or personal assistants, researchers were able to create believable AI agents that behave like human beings. However, nothing can point out the inabilities of current methods better than repetitive game AI, that is easily looked through by players for their machine nature. In the Emotional Mario task, we ask researchers to create believable AI agents playing one of the most iconic classic video games:  Super Mario Bros. 
@@ -27,7 +29,17 @@ The target group for this task is diverse and broad. It includes researchers and
 We provide a multimodal dataset, Toadstool [4], consisting of ten participants playing Super Mario Bros. The dataset contains their game input, demographics, sensor output from a medical-grade device, and videos of their faces while playing. The data is free to use for academic purposes.
 
 #### Evaluation Methodology
-For the first subtask, the evaluation will be done by measuring the mean absolute error between the predicted death and the nearest actual death. The second subtask will be evaluated by a jury of people with different levels of experience. The jury will be presented with a series of videos, where they must select which videos were made with a human playing the game and which videos were made with an AI playing.
+The task consists of two subtasks. Both tasks are mandatory for participation. The Artificial skill subtask is meant to measure the skill of the AI player. The evaluation metric is defined as the number of completed levels and lost lives within 10 minutes of playtime (levels divided by lost lives).
+
+The second subtask, called human or not, will be evaluated by a jury of people with different levels of experience playing computer games (at least two, expert/non-expert). The jury will be presented with a series of videos, where they must select which videos were made with a human playing the game and which videos were made with an AI playing. The possibilities between a human and an AI player is represented with a 10 points scale. The length of the video is 5 minutes with a specific set of levels. The organizers will provide some videos themself from AI and real players.
+
+<!-- For the first subtask, the evaluation will be done by measuring the mean absolute error between the predicted death and the nearest actual death. The second subtask will be evaluated by a jury of people with different levels of experience. The jury will be presented with a series of videos, where they must select which videos were made with a human playing the game and which videos were made with an AI playing. -->
+
+**Submission**
+
+**Sub Task 1 (artificial skill)**: The actions for an agent playing 10 minutes super Mario in the OpenAI Gym with Settings provided by the organizers.
+
+**Sub Task 2 (human or not)**: 5 minutes video from an agent playing super Mario in the OpenAI Gym with the Settings provided by the organizers. 
 
 
 #### References and recommended reading
